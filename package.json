@@ -1,0 +1,19 @@
+{
+  "name": "globalcryptoex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "apidocstyles": "node-sass --output-style compressed scss/shift/api-docs.scss css/api-docs.css",
+    "shiftstyles": "node-sass --output-style compressed scss/shift/shift-styles.scss css/shift-styles.css",
+    "build": "sudo npm run shiftstyles && sudo npm run apidocstyles",
+    "serve": "sudo npm run build && live-server"
+  },
+  "author": "Shift Markets",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.5.2"
+  }
+}

@@ -1,0 +1,62 @@
+<style media="screen">
+.card-header {
+padding: 0.75rem 1.25rem;
+margin-bottom: 0;
+background-color: #E4E4E4;
+border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+color:#34495E;
+}
+</style>
+<div id="sidebar" class="sidebar-nav">
+    <a class="sidebar-nav-item" href="home.html"><i class="material-icons">home</i> Home</a>
+    <a class="sidebar-nav-item" href="buy-sell.html"><i class="material-icons">swap_vertical_circle</i> Buy / Sell</a>
+    <!-- <a class="sidebar-nav-item" href="send-request.html"><i class="material-icons">send</i> Send / Request</a> -->
+    <a class="sidebar-nav-item" href="balances.html"><i class="material-icons">account_balance</i> My Balances</a>
+    <a class="sidebar-nav-item" href="trade.html"><i class="material-icons">account_balance_wallet</i>Trade</a>
+    <!-- <div class="my-accounts-col sidebar-nav-item">
+        <div ap-widget='UserTable' hide-header class="ap-userTable"></div>
+    </div> -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed sidebar-nav-item card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              <i class="material-icons">account_balance_wallet</i> Coin Wallet
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse">
+            <div class="my-accounts-col sidebar-nav-item">
+                <div ap-widget='UserTable' hide-header class="ap-userTable"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a class="sidebar-nav-item" href="deposit-withdraw.html"><i class="material-icons">account_balance</i> Deposit / Withdraw</a> -->
+    <a class="sidebar-nav-item" href="settings.html"><i class="material-icons">settings</i> Settings</a>
+    <a class="sidebar-nav-item" href="help.html"><i class="material-icons">help</i> Help</a>
+
+</div>
+
+
+<!-- Better to load this code below here which changes the active highlight in the sidebar...otherwise must run on each page. -->
+
+        <!-- Shift Markets -->
+     
+
+<script type="text/javascript">
+$(function() {
+    //console.log("got here");
+     var pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("/")+1);
+     $("#sidebar a").each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).closest('.sidebar-nav-item').addClass("active");
+          //console.log("PAGE URL",pgurl);
+          //console.log("PAGE URL2",$(this).attr("href"));
+          //console.log("PAGE URL CLOSEST",$(this).closest('.buy-sell-col'));
+     })
+})
+</script>
+

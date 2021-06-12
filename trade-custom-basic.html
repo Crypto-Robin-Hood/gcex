@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trade</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/misc.css">
+    <link rel="stylesheet" type="text/css" href="css/tradeStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/shift-styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse" role="navigation">
+        <div class="container no-override">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand col-2" href="index.html">
+                <img src="images/Global_Logo_Text.png" class="hidden-md-down d-inline mr-2 img-fluid">
+            </a>
+            <div id="main-navigation">
+            </div>
+            <div class="row middle-xs end-xs">
+                <div ap-widget="AccountSelect"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper trade-view simple-trade-view">
+        <div class="content">
+            <!-- Secondary Header -->
+            <section class="row middle-xs secondary-header">
+                <div class="col-xs-2">
+                    <a class="menu-hamburger user-options-menu-btn" type="button"><i class="material-icons">menu</i></a>
+                    <div>
+                    	<div ap-widget="InstrumentSelect" class="col-xs-offset-2"></div>
+                	</div>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li class="show-loggedin" ap-wrapper="Deposit">
+                            <a href="#" title="Deposit"><i class="material-icons">call_received</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_DEPOSIT"></span>Deposit</a>
+                        </li>
+                        <li class="show-loggedin" ap-wrapper="Withdraw">
+                            <a href="#" title="Withdraw"><i class="material-icons">call_made</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_WITHDRAW"></span>Withdraw</a>
+                        </li>
+                        <li class="show-loggedin" ap-wrapper="UserInfo">
+                            <a href="#" title="profile"><i class="material-icons">person</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_PROFILE"></span>Settings</a>
+                        </li>
+                        <li class="show-loggedin" ap-wrapper="Reports">
+                            <a href="#" title="profile"><i class="material-icons">subject</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_REPORTS"></span>Reports</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="index.html" title="profile"><i class="material-icons">home</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_REPORTS"></span>Home</a>
+                        </li>
+                        <li class="show-loggedin">
+                            <a ap-action='Logout' to='index.html'><i class="material-icons">power_settings_new</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_LOGOUT"></span>Sign Out</a>
+                        </li>
+                    	-->
+                    </ul>
+                </div>
+            </section>
+            <!-- End Secondary Header -->
+            <div class="example-grow">
+                <div class="row parent">
+                    <div class="item text-center">   
+                        <div ap-widget="Ticker"></div>
+                        <div class="clearfix"></div>
+                        <div class="chart-wrap historic-rates-chart-wrapper">
+                            <form class="module-trigger historic-rates-chart-trigger chart-trigger">
+                                <input id="chart-trigger-1" type="radio" name="tabs" checked>
+                                <label for="chart-trigger-1" class="historic-rates-chart-label"><div ap-widget="MarketValue"></div></label>
+                                <div class="clear"></div>
+                                <div class="trigger-content">
+                                    <div id="chart-trigger-content-1" class="historic-rates-chart">
+                                        <div ap-widget='Chart' hide-header></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item text-center">
+                        <!-- account overview plain -->
+                        <div class="account-overview">
+                            <div ap-widget="AccountBalances" hide-header></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="order-entry-wrap">
+                            <div class="order-entry-head">
+                                <form class="module-trigger order-entry-trigger">
+                                    <input id="trigger-entry-1" type="radio" name="tabs" checked>
+                                    <label for="trigger-entry-1" class="order-entry-btn row-title">Trade</label>
+                                    <div class="trigger-content">
+                                        <div id="trigger-content-1">
+                                            <!-- ORDER ENTRY -->
+                                            <div class="order-entry">
+                                                <div ap-widget='OrderEntry'></div>
+                                            </div>
+                                            <!-- END ORDER ENTRY -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.example-grow -->
+        </div>
+        <!-- /.content opened or not-->
+    </div>
+    <section id="footerId">
+    </section>
+    <!-- /.wrapper-->
+    <div id="resetPassword" ap-wrapper="ResetPassword"></div>
+    <div id="verifyEmail" ap-wrapper="VerifyEmail"></div>
+    <!-- Third Party -->
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/embed.cryptowatch.js"></script>
+    <script src="js/lib/growl.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Charting Library -->
+    <script type="text/javascript" src="libs/charting_library_new/charting_library.min.js"></script>
+    <script type="text/javascript" src="libs/charting_library_new/datafeed/udf/datafeed.js"></script>
+    <script type="text/javascript" src="libs/charting_library_new/datafeed/ChartAPI.js"></script>
+    <!-- Platform -->
+    <script src="js/config.js"></script>
+    <script src="js/library.min.js"></script>
+    <script src="js/widgets.min.js"></script>
+    <script src='js/tester.js'></script>
+    <!-- Shift Markets -->
+    <script src="js/addons.js"></script>
+</body>
+
+</html>

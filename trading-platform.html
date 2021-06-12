@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Security</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <!-- Animation -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/your_style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/misc.css">
+    <link rel="stylesheet" type="text/css" href="css/shift-styles.css">
+</head>
+
+<body>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <section class="main-navigation-header">
+        <nav class="navbar navbar-toggleable-md navbar-inverse" role="navigation">
+            <div class="container no-override">
+                <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="header-nav" class="col-8 col-sm-3">
+                    <a href="trade.html" ap-widget="MarketValue" class="navbar-brand market-value"></a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+                    <div id="main-navigation"></div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div id="login" title="Create new user" class="mfp-hide">
+        <div class="ap-form-test" style="padding:22px">
+            <div ap-widget='LoginForm' to='trade.html'></div>
+        </div>
+    </div>
+    <div id="dialog-form" title="Create new user" class="mfp-hide">
+        <div class="ap-form-test ">
+            <div ap-widget='RegisterForm' hide-header to='trade.html' headerTitle=""></div>
+        </div>
+    </div>
+
+    <div class="theme-docs-header">
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10">
+                    <h1 data-animate="fadeInUp">Security</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="theme-docs-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p class="lead mt-4">Our trading platform has been vetted by multiple third-party security audit firms and penetration test
+                        consultants with stringent testing methods. Moreover, every aspect of our platform has gone through
+                        the strict scrutiny of the open-source CryptoCurrency Security Standard (CCSS).</p>
+
+                    <div class="mt-5">
+                        <h5 class="mt-4">Encryption</h5>
+                        <hr>
+                        <p>Our commitment to user security includes encrypting all sensitive user information in real time.
+                            Additionally, all website data is transmitted via encrypted Transport Layer Security (TLS) connections
+                            and internal service interactions utilize separate authentication contexts which are never exposed
+                            to the internet. We’ve built protections against brute force Denial of Service (DoS) and Distributed
+                            Denial of Service (DDos) attacks through robust rate-limiting, concurrent connection limits,
+                            and active whitelists and blacklists.</p>
+
+                        <h5 class="mt-4">Hardware Security</h5>
+                        <hr>
+                        <p>Our hardware and hosting conform to the highest security standards in the industry. We run our software
+                            across multiple Tier 3 data centers on wholly-owned hardware that is securely stored with biometric
+                            access control. We even host our database and exchange directly on in-house hardware to minimize
+                            the number of people who have access to our systems.</p>
+
+                        <h5 class="mt-4">Account Security</h5>
+                        <hr>
+                        <p>To ensure wallet security, our global setting protections prevent unauthorized account activity including
+                            unusual withdrawal requests so your money is always safe on our platform. The trading interface
+                            also supports two-factor authentication (2FA) backed by Google to ensure you’re the only one
+                            with access to your funds.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="footerId">
+    </section>
+
+    <div id="resetPassword" ap-wrapper="ResetPassword"></div>
+    <div id="verifyEmail" ap-wrapper="VerifyEmail"></div>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="dist/theme.min.js"></script>
+
+    <!-- Js Files -->
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="js/lib/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/lib/slick.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/lib/inview.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ajaxchimp.min.js"></script>
+    <script type="text/javascript" src="js/lib/validator.js"></script>
+    <script type="text/javascript" src="js/lib/custom.js"></script>
+
+    <!-- Shift Markets -->
+    <script src='js/addons.js'></script>
+
+    <!-- Third Party -->
+    <!-- <script src="js/lib/jquery-3.2.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/lib/bootstrap.min.js"></script> -->
+    <!-- <script src="js/lib/embed.cryptowatch.js"></script> -->
+    <script src="js/lib/growl.js"></script>
+
+    <!-- Platform -->
+    <script src="js/config.js"></script>
+    <script src="js/library.min.js"></script>
+    <script src="js/widgets.min.js"></script>
+    <script src='js/tester.js'></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trade Advanced</title>
+    <link rel="icon" href="images/FavIcon.png">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/tradeStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/shift-styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse" role="navigation">
+        <div class="container no-override">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand col-2" href="index.html">
+                <img src="images/Global_Logo_Text.png" class="hidden-md-down d-inline mr-2 img-fluid"><span class="hidden-lg-up"><span class="company-name">Global Crypto Exchange</span></span>
+            </a>
+            <div id="main-navigation">
+            </div>
+        </div>
+    </nav>
+    <ul class="nav">
+        <li class="show-loggedin" ap-wrapper="Deposit">
+            <a href="#" title="Deposit"><i class="material-icons">call_received</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_DEPOSIT"></span>Deposit</a>
+        </li>
+        <li class="show-loggedin" ap-wrapper="Withdraw">
+            <a href="#" title="Withdraw"><i class="material-icons">call_made</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_WITHDRAW"></span>Withdraw</a>
+        </li>
+        <li class="show-loggedin" ap-wrapper="UserInfo">
+            <a href="#" title="profile"><i class="material-icons">person</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_PROFILE"></span>Settings</a>
+        </li>
+        <li class="show-loggedin" ap-wrapper="Reports">
+            <a href="#" title="profile"><i class="material-icons">subject</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_REPORTS"></span>Reports</a>
+        </li>
+        <li>
+            <a href="index.html" title="profile"><i class="material-icons">home</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_REPORTS"></span>Home</a>
+        </li>
+        <li class="show-loggedin">
+            <a ap-action='Logout' to='index.html'><i class="material-icons">power_settings_new</i> <span class="menu-item-parent" ap-translate="SIDEBAR.MENU_LOGOUT"></span>Sign Out</a>
+        </li>
+    </ul>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="title">OPTIONS</div>
+        </div>
+        <!-- /.sidebar -->
+        <div class="content">
+            <!-- Header -->
+            <header class="row middle-xs">
+                <div>
+                    <div class="row middle-xs">
+                        <!--
+                        <div class="col-xs-5">
+                            <div class="logo"><a href="index.html"><img src="images/Global_Logo-Coin.png" class="d-inline mr-2 w-25" /></a></div>
+                        </div>
+                        -->
+                        <div ap-widget="InstrumentSelect" class="col-xs-5 col-xs-offset-2"></div>
+                    </div>
+                </div>
+                <div ap-widget="Ticker"></div>
+                <div>
+                    <div class="row middle-xs end-xs">
+                        <div ap-widget="AccountSelect"></div>
+                        <a class="col-xs-3 signin hide-loggedin" ap-wrapper="LoginForm" to="index.html">Log In</a>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+            <div class="example-grow">
+                <div class="row parent">
+                    <div class="item text-center">
+                        <div class="chart-wrap">
+                            <form class="module-trigger chart-trigger">
+                                <input id="chart-trigger-1" type="radio" name="tabs" checked>
+                                <label for="chart-trigger-1" class="price-ch-btn">Price chart</label>
+                                <label for="chart-trigger-2" class="depth-ch-btn" id="depthChartToggle">Depth chart</label>
+                                <div class="clear"></div>
+                                <div class="trigger-content">
+                                    <div id="chart-trigger-content-1">
+                                        <div ap-widget='Chart' hide-header></div>
+                                        <div id="depthChartHolder" class="hide">
+                                            <div class="buttons">
+                                                <button id="zoomOut">–</button>
+                                                <button id="zoomIn">+</button>
+                                            </div>
+                                            <canvas id="depthchart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="open-order-head">
+                            <form class="module-trigger open-order-trigger">
+                                <input id="trigger-1" type="radio" name="tabs" checked>
+                                <label for="trigger-1" class="open-ord-btn">Open orders</label>
+                                <input id="trigger-2" type="radio" name="tabs">
+                                <label for="trigger-2" class="filled-ord-btn">Filled orders</label>
+                                <input id="trigger-3" type="radio" name="tabs">
+                                <label for="trigger-3" class="inactive-ord-btn">Inactive Orders</label>
+                                <input id="trigger-4" type="radio" name="tabs">
+                                <label for="trigger-4" class="trade-reports-btn no-brd">Trade Reports</label>
+                                <input id="trigger-5" type="radio" name="tabs">
+                                <label for="trigger-5" class="withdraw-status-btn no-brd">Withdraw Status</label>
+                                <div class="clear"></div>
+                                <div class="trigger-content">
+                                    <div id="trigger-content-1">
+                                        <div id="ap-open">
+                                            <div class="ap-OrdersTables" ap-widget='OpenOrders2' hide-header></div>
+                                        </div>
+                                    </div>
+                                    <div id="trigger-content-2">
+                                        <div id="account-trades">
+                                            <div class="ap-OrdersTables" ap-widget='Trades' hide-header></div>
+                                        </div>
+                                    </div>
+                                    <div id="trigger-content-3">
+                                        <div id="account-orders">
+                                            <div class="ap-OrdersTables" ap-widget='OrderHistoryCancelled' hide-header></div>
+                                        </div>
+                                    </div>
+                                    <div id="trigger-content-4">
+                                        <div id="trade-reports">
+                                            <div class="ap-OrdersTables" ap-widget='TradeReports' hide-header></div>
+                                        </div>
+                                    </div>
+                                    <div id="trigger-content-5">
+                                        <div id="withdraw-status">
+                                            <div class="ap-OrdersTables" ap-widget="WithdrawStatus" hide-header></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- account overview plain -->
+                        <div class="account-overview">
+                            <div ap-widget="AccountBalances" hide-header></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.example-grow -->
+        </div>
+        <!-- /.content opened or not-->
+    </div>
+    <!-- /.wrapper-->
+    <div id="resetPassword" ap-wrapper="ResetPassword"></div>
+    <div id="verifyEmail" ap-wrapper="VerifyEmail"></div>
+    <!-- Third Party -->
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/embed.cryptowatch.js"></script>
+    <script src="js/lib/growl.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Charting Library -->
+    <script type="text/javascript" src="libs/charting_library_new/charting_library.min.js"></script>
+    <script type="text/javascript" src="libs/charting_library_new/datafeed/udf/datafeed.js"></script>
+    <script type="text/javascript" src="libs/charting_library_new/datafeed/ChartAPI.js"></script>
+    <!-- Platform -->
+    <script src="js/config.js"></script>
+    <script src="js/library.min.js"></script>
+    <script src="js/widgets.min.js"></script>
+    <script src='js/tester.js'></script>
+
+    <!-- Shift Markets -->
+    <script type="text/javascript" src="js/addons.js"></script>
+    <script>
+    // document.getElementById('releaseVersion').innerHTML = APConfig.releaseVersion;
+
+    document.getElementById('depthChartToggle').addEventListener('click', function(e) {
+        document.getElementById('depthChartHolder').classList.toggle('hide');
+        document.getElementById('ap-trading-view-chart').classList.toggle('compact');
+    });
+    </script>
+</body>
+
+</html>
