@@ -1,0 +1,150 @@
+/*Currencies Page*/
+
+.plan div {
+  text-align: center !important;
+}
+
+.pricing-plans .wrapper {
+  top: 0px;
+}
+
+.pricing-plans .wrapper .plans .plan>div {
+  width: 33%;
+  text-align: center;
+}
+
+.choose {
+  display: none;
+}
+
+
+/*okqneo*/
+
+.business-hero:after {
+  width: 100%;
+  height: 100%;
+}
+
+p.customFadeInUp.sub-text {
+  font-size: 18px;
+  width: 70%;
+  line-height: 1.5em;
+}
+
+
+/* For Modals to work*/
+
+.ap-title {
+  display: none;
+}
+
+.ap-form-test {
+  background: #f7f7f7 !important;
+  padding: 30px;
+}
+
+.ap-form-test button {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.ap-form-test h3 {
+  font-size: 16px;
+}
+
+.login-buttons {
+  background: #57B7F7;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.login-buttons:hover {
+  background: #289E86;
+}
+
+#dialog-form {
+  position: relative;
+  background: #FFF;
+  padding: 0px;
+  width: auto;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+#login {
+  position: relative;
+  background: #FFF;
+  padding: 0px;
+  width: auto;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+#login .ap-body,
+#login .ap-widget,
+#login .ap-header,
+#login .error-block,
+#login .information-block,
+#dialog-form .ap-body,
+#dialog-form .ap-widget,
+#dialog-form .ap-header,
+#dialog-form .error-block {
+  background: #f7f7f7;
+  border: none;
+}
+
+#dialog-form div.pad.information-block,
+#dialog-form div.pad.error-block,
+#login div.pad.information-block,
+#login div.pad.error-block {
+  padding-left: 19px;
+  /*acs*/
+  /*color:blue;*/
+  color: #cf5c65;
+  text-align: center;
+  font-size: larger;
+}
+
+
+/*Quote Styles*/
+
+.quote {
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 45px;
+  width: 95%;
+}
+
+.quote span {
+  font-family: Georgia;
+  font-size: 75px;
+  position: absolute;
+  left: 0;
+  color: #94a7d4;
+  top: 10px;
+}
+
+
+/*Section with Trading Screenshot*/
+
+.spacial-app-store ul {
+  font-size: 16px
+}
+
+.feature-list {
+  list-style-type: none;
+}
+
+.blt-item:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #202832;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}

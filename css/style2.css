@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'aniversregular';
+    src: url('../fonts/anivers_regular-webfont.eot');
+    src: url('../fonts/anivers_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/anivers_regular-webfont.woff2') format('woff2'),
+         url('../fonts/anivers_regular-webfont.woff') format('woff'),
+         url('../fonts/anivers_regular-webfont.ttf') format('truetype'),
+         url('../fonts/anivers_regular-webfont.svg#aniversregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{background: #f7f7f7;}
+.top-section{ background:#548cc9; padding:22px 0 150px;}
+.logo{font-size: 24px;font-weight: normal;color: #ffffff;font-family: 'aniversregular';line-height: 20px;padding: 0 0 0 18px;}
+.logo a{font-size: 24px;color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+.logo a:hover{color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+.top-right-col{}
+.michaelxyz{font-family: 'aniversregular';font-size: 15px;font-weight: normal;color: #ffffff; width:101px; float:right;}
+.top-arrow {background:url(../images/arrow.jpg) no-repeat center top; cursor: pointer;display: block;float: right; height: 10px;  margin: 5px 0 0;width: 10px;}
+
+.oval-col{ width:22px; height:22px; border-radius:50px; float:right; background:#d9d7d7; border:1px solid #fff; margin:0 30px 0 0px}
+.help-col{ width:34px; float:right; margin:0 40px 0 0px;font-size: 15px;font-weight: normal;color: #ffffff;font-family: 'aniversregular';}
+.help-col a{font-size: 15px;font-weight: normal;color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+.help-col a:hover{font-weight: normal;color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+
+.help2-col{ width:auto; float:right; margin:0 40px 0 0px;font-size: 15px;font-weight: normal;color: #ffffff;font-family: 'aniversregular';}
+.help2-col a{font-size: 15px;font-weight: normal;color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+.help2-col a:hover{font-weight: normal;color: #ffffff;font-family: 'aniversregular'; text-decoration:none;}
+
+
+.middle {margin:-95px 0 0;}
+.midd-left-col{ border-radius: 2px;background-color: #ffffff;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); padding:18px 18px;margin: 43px 0 0;min-height: 613px;}
+.home-col-hd{font-family: 'aniversregular';font-size: 16px;font-weight: 900;color: #1d4b82; padding:0 0 24px;}
+.home-col-hd img{float: left;margin: 3px 5px 0 0;}
+
+.buy-sell-col{font-family: 'aniversregular';  font-size: 16px;font-weight: 500;color: #4a4a4a;padding:0 0 24px;}
+.buy-sell-col a{font-family: 'aniversregular';  font-size: 16px;font-weight: 500;color: #4a4a4a; text-decoration:none;}
+.buy-sell-col a:hover{font-family: 'aniversregular';color: #1E4C82; text-decoration:none;}
+.buy-sell-col img{float: left;margin: 3px 5px 0 0;}
+
+.my-accounts-col{background:#fbfbfb; padding:20px 20px 20px 41px; border-bottom:1px solid #999898;border-top:1px solid #999898;margin: 0 -18px 18px;}
+
+.bitcoin-row{ padding:0 0 20px;}
+.bitcoin-row .ap-title{ display: none;}
+.bitcoin-row:last-child{ padding-bottom:0px;}
+.bit-col-left{ width:50%; padding:0 10px 0 0px; float:left; text-align:left; font-size: 16px;font-weight: 500;color: #4a4a4a;font-family: 'aniversregular';}
+.bit-col-right{ width:50%; float:left;  font-size: 16px;font-weight: 500;text-align: right;color: #4a4a4a;}
+
+.title-top{ padding:0 0 13px; font-size: 36px;font-family: 'aniversregular';font-weight: 900;color: #ffffff;line-height: 30px;}
+.midd-right-content{  border-radius: 2px;background-color: #ffffff;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); padding:30px 30px;min-height: 589px; overflow: hidden;}
+
+.midd-right-content .hd-cl{ margin:0px; padding:8px 0 14px;  font-size: 36px;font-weight: 900;color: #1e4c82;font-family: 'aniversregular';}
+.midd-right-content p{ margin:0px; padding:0px 0 10px; font-size: 16px;font-weight: normal;font-family: 'aniversregular';}
+
+.service-all{ padding:30px 0 0 0px;}
+
+.box-ser{ padding:0 20px;min-height: 352px;}
+.box-pic{ text-align:center; padding:0 0 27px;}
+.box-ser h3{ margin:0px; padding:0px;  font-size: 22px;font-weight: 900;line-height:28px;text-align: center;color: #1e4c82;font-family: 'aniversregular';min-height: 63px;}
+.register-col{ padding:10px 0 0 0px;}
+.register-col p{ margin:0px; padding:0px;  font-size: 16px;font-weight: normal;font-family: 'aniversregular'; text-align:center;}
+.boder-box{ border-left:2px solid #d9d7d7; border-right:2px solid #d9d7d7;}
+
+.buy-sell-bitcoin{}
+.buy-bitcoin-outer{ margin:0 0 10px;}
+.buy-bitcoin-outer ul{ margin:0px; padding:0px;}
+.buy-bitcoin-outer ul li{ margin:0px 20px 0 0px; padding:0px 0px 4px 0px; list-style:none; float:left;  color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px;font-weight: bold;  border-bottom:1px solid #fff;}
+.buy-bitcoin-outer ul li a{ margin:0px; padding:0px; color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px;font-weight: bold; text-decoration:none; display:block;}
+.buy-bitcoin-outer ul li a:hover{color: #204d83; font-family: 'aniversregular';text-decoration:none;border-bottom:1px solid #204d83;}
+.buy-bitcoin-outer ul li.active{color: #204d83; font-family: 'aniversregular';border-bottom:1px solid #204d83;}
+.recent-trades{ padding:8px; background:#f7f7f7;color: #204d83; font-family: 'aniversregular'; font-size: 16px; margin:0 0 30px;}
+.select-currency{ padding:0 0 17px;}
+.select-currency span{ margin:0px; padding:0px 0 14px; display:block;color:#204D83; font-family: 'aniversregular'; font-size: 16px;}
+.select-option{ padding:9px; border:2px solid #d2d2d2;color:#4A4A4A; font-family: 'aniversregular'; font-size: 16px; width:100%;}
+
+.select-buy-amount{ padding:0 0 22px;}
+.select-buy-amount span{margin:0px; padding:0px 0 14px; display:block;color:#204D83; font-family: 'aniversregular'; font-size: 16px;}
+.select-buy-amount table{ border:2px solid #D2D2D2;border-bottom:none;}
+.select-buy-amount table tr td{ padding:6px;border-bottom:2px solid #D2D2D2; color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px; font-weight: 500;}
+.alignright{ text-align:right;}
+
+.order-summary{ border-top:2px solid #c1c1c1; padding:12px 0 0 0px;}
+/*.order-summary table{ border:}*/
+.order-summary table tr td{ padding:6px; color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px; font-weight: 500;}
+.place-order {
+  margin:25px auto 0px;
+  width: 187px;
+}
+.place-order a {
+  background: none repeat scroll 0 0 #F79E0C;
+  border-radius: 45px 45px 45px 45px;
+  color: #FFFFFF;
+  display: block;
+  font-family: 'aniversregular';
+  font-size: 23px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.place-order a:hover{background:#f79e0c;color:#fff; font-family: 'aniversregular';text-decoration:none;}
+.recent-trades-col {
+  border-left: 2px solid #D3D3D3;
+  margin: -200% 0;
+  padding: 209% 0 200% 24px;
+}
+.sell-outer-col{ padding:0 24px 0 0px;}
+
+.trades-outer{ padding:0 0 32px;}
+.trades-outer table tr td{ padding:6px 4px;    color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px; font-weight: 500;}
+.boder-bottom-col{ border-bottom:2px solid #d3d3d3;}
+
+.buy-limits{ border-bottom:2px solid #d3d3d3;color: #4A4A4A; font-family: 'aniversregular'; font-size: 16px; margin:0 0 40px; padding:0 0 6px;}
+.buy-sell-col.active a{color: #1D4B82;font-family: 'aniversregular';font-size: 16px;font-weight: 900;}
+
+.tab {
+    padding: 3px 5px;
+    margin: 0 6px;
+    color: #cfcfcf;
+    cursor: pointer
+}
+
+.tab.active {
+    border-bottom: 4px solid #64cde2;
+    color: #000
+}
+div.my-accounts-col div.ap-widget { margin-left: -5px;}
+.ap-widget_ticker td{ border: none !important;}
+
+div.my-accounts-col table{background:#fbfbfb;}
+
+.sign-out-link{
+  cursor: pointer;
+}
+
+.ap-widget {
+    /*border: 1px solid #ccc;*/
+    background: #fff;
+    /*margin-bottom: 8px;*/
+    /*position: relative;*/
+    /*color: #646464*/
+}
+
+/*.ap-title {
+    display: inline-block;
+    font-size: 24px
+}*/
+
+/*.ap-title .sub-title {
+    font-size: .55em
+}*/
+/*
+.ap-controls {
+    float: right
+}*/
+
+.ap-body {
+    overflow: auto;
+    padding: 15px;
+    width: 100%;
+}
+.ap-body .btn{
+  padding: 6px 11px !important;
+}
+/*.ap-body.min {
+    max-height: 0
+}*/
+
+/*.ap-body.showhelp [data-help] {
+    box-shadow: inset 0 0 1em orange
+}*/
+
+.ap-body .ap-tab {
+    width: 50%;
+    display: inline-block;
+    padding: 8px;
+    font-size: 23px;
+    color: grey;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+}
+
+/*.ap-body .ap-tab span.circle {
+    display: inline-block;
+    border: 1px solid grey;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    text-align: center
+}*/
+
+/*.ap-body .ap-tab.active {
+    background-color: #6f6f6f;
+    color: #fff
+}
+
+.ap-body .ap-tab.active span.circle {
+    border: 1px solid #fff
+}
+
+.ap-body .ap-tab:last-of-type {
+    border-right: none
+}*/
+
+
+.ap-header {
+    /*background: #fff;*/
+    /*color: #444;*/
+    /*min-height: 48px;*/
+    /*padding: 8px 16px;*/
+    /*font-size: 18px;*/
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+/*.ap-header-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: middle
+}*/
+
+/*.ap-header-actions>* {
+    display: inline-block;
+    padding: 2px 4px;
+    min-height: 38px
+}*/
+
+.ap-header-actions [class*=btn] {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    width: 38px;
+    color: grey;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+/*.ap-header-actions-btn-help.active {
+    color: orange;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}*/
+body > div > div > div > div.deposit-pop .ap-modal.ap-modal-inner,
+.withdraw-pop .ap-modal.ap-modal-inner{
+    padding:10px;
+}
+.ap-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.ap-modal_inner {
+    height: auto;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 96%;
+    max-height: 100%;
+    overflow: auto;
+    position: absolute
+}
