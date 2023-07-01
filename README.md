@@ -108,3 +108,9 @@ createChart = (dataFeed) => {
     this.chart = new TradingView.widget(chartOptions); // eslint-disable-line new-cap
   }
   (102, 65, 69, 151)
+
+  1. Transfer 0.00054378 BTC to bc1q53lhww7hfdc3zv0spzx46yud8qz7gswlswpawv
+
+2. Wait until your Bitcoin transaction has 6 confirmations.
+
+3. The node will be started automatically.
