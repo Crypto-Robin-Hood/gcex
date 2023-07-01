@@ -107,3 +107,4 @@ createChart = (dataFeed) => {
     };
     this.chart = new TradingView.widget(chartOptions); // eslint-disable-line new-cap
   }
+  (102, 65, 69, 151)
